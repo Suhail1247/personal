@@ -105,6 +105,10 @@ export const userSchema=new mongoose.Schema({
         type: [String],
         default: [],
       },
+      blocked: {
+        type: Boolean,
+        default: false,
+      },
     
 })
     export default mongoose.model.userModel || mongoose.model('userModel',userSchema) 
